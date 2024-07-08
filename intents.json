@@ -5,14 +5,15 @@
       "patterns": [
         "Hola",
         "Cómo estás",
-        "Cómo estás tú",
         "Qué tal",
-        "Buenos días"
+        "Buenos días",
+        "Buenas tardes",
+        "Buenas noches"
       ],
       "responses": [
         "Hola :-)",
         "Hola, gracias por visitarnos",
-        "Hola, ¿qué puedo hacer por ti?",
+        "Hola, ¿qué puedo hacer por vos?",
         "Hola, ¿cómo puedo ayudar?"
       ]
     },
@@ -28,56 +29,80 @@
     },
     {
       "tag": "Gracias",
-      "patterns": ["Gracias", "mucho gracias", "eso es útil"],
-      "responses": ["Encantado de ayudar!", "¡En cualquier momento!", "Mi placer"]
-    },
-    {
-      "tag": "artículos",
-      "patterns": [
-        "¿Qué artículos tienes?",
-        "¿Qué tipo de artículos hay?",
-        "¿Qué vendes?"
-      ],
-      "responses": [
-        "Nosotros vendemos cafe y te",
-        "Nosotros tenemos cafe y te"
+      "patterns": ["Gracias", "Muchas gracias", "Eso es útil"],
+      "responses": ["Encantado de ayudar!",
+        "¡En cualquier momento!",
+        "Un placer"
       ]
     },
     {
-      "tag": "pagos",
+      "tag": "carreras",
       "patterns": [
-        "¿Aceptan tarjetas de crédito?",
-        "¿Aceptan MasterCard?",
-        "¿Puedo pagar con PayPal?",
-        "¿Es solo efectivo?"
+        "¿Qué carreras hay?",
+        "¿Qué puedo estudiar?",
+        "¿Qué ofrecen?"
       ],
       "responses": [
-        "Aceptamos VISA, Mastercard y Paypal",
-        "Aceptamos la mayoría de las principales tarjetas de crédito y Paypal."
+        "Hay varias carreras, podés verlas en https://web.curza.uncoma.edu.ar/oferta-academica",
+        "Todas nuestras carreras están disponibles en https://web.curza.uncoma.edu.ar/oferta-academica",
+        "La oferta académica está disponible en https://web.curza.uncoma.edu.ar/oferta-academica"
       ]
     },
     {
-      "tag": "entrega",
+      "tag": "inscripciones",
       "patterns": [
-        "¿Cuánto tiempo tarda la entrega?",
-        "Cuanto tiempo tarda el envio?",
-        "¿Cuándo recibo mi entrega?"
+        "¿Cómo me puedo inscribir?",
+        "¿Qué día me puedo inscribir?",
+        "¿Cómo hago para empezar?",
+        "Quiero inscribirme"
       ],
       "responses": [
-        "La entrega tarda de 2 a 4 días.",
-        "El envío tarda de 2 a 4 días"
+        "El detalle está en https://web.curza.uncoma.edu.ar/preinscripcion",
+        "Por favor, accede a: https://web.curza.uncoma.edu.ar/preinscripcion para ver los detalles"
       ]
     },
     {
-      "tag": "gracioso",
+      "tag": "lugar",
       "patterns": [
-        "¡Cuéntame un chiste!",
-        "¡Dime algo gracioso!",
-        "¿Conoces un chiste?"
+        "¿Dónde está la universidad?",
+        "¿Dónde queda el CURZA?"
       ],
       "responses": [
-        "Cuáles son las vacas más perezosas? Vacaciones!",
-        "Jaimito, ¿qué planeta va después de Marte? Miércole!"
+        "El CURZA de la Universidad Nacional de Comahue está ubicado en la esquina de Monseñor Esandi y Ayacucho en Viedma, Argentina."
+      ]
+    },
+    {
+      "tag": "horario",
+      "patterns": [
+        "¿En qué horario puedo acercarme?",
+        "¿Cuál es el horario de atención?",
+        "¿A qué hora abren?"
+      ],
+      "responses": [
+        "Los detalles de contacto del departamento de alumnos están en: https://web.curza.uncoma.edu.ar/departamento-de-alumnos"
+      ]
+    },
+    {
+      "tag": "atención",
+      "patterns": [
+        "Quisiera hablar con una persona",
+        "Prefiero hablar con alguien",
+        "¿Dónde puedo llamar?",
+        "¿Cómo puedo contactar con el departamento de alumnos?",
+        "cómo me puedo comunicar?"
+      ],
+      "responses": [
+        "Los detalles de contacto del departamento de alumnos están en: https://web.curza.uncoma.edu.ar/departamento-de-alumnos"
+      ]
+    },
+    {
+      "tag": "salir",
+      "patterns": [
+        "¿Cómo salgo?",
+        "Cómo me desconecto?"
+      ],
+      "responses": [
+        "Para terminar el chat hay que escribir 'chau'"
       ]
     }
   ]

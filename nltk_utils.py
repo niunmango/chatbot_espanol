@@ -1,19 +1,15 @@
 import numpy as np
 import nltk
 # nltk.download('punkt')
-from nltk.tokenize.toktok import ToktokTokenizer
-
-from nltk.stem.snowball import SnowballStemmer
-
-stemmer = SnowballStemmer("spanish")
-toktok = ToktokTokenizer()
+from nltk.stem.porter import PorterStemmer
+stemmer = PorterStemmer()
 
 def tokenize(sentence):
     """
     split sentence into array of words/tokens
     a token can be a word or punctuation character, or number
     """
-    return toktok.tokenize(sentence)
+    return nltk.word_tokenize(sentence)
 
 
 def stem(word):
@@ -34,7 +30,7 @@ def bag_of_words(tokenized_sentence, words):
     example:
     sentence = ["hello", "how", "are", "you"]
     words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
-    bag   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
+    bog   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
     """
     # stem each word
     sentence_words = [stem(word) for word in tokenized_sentence]

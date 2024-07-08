@@ -1,23 +1,17 @@
 # Chatbot_espanol
 
-This is a simple chatbot built with tensorflow. The chatbot only understands and replies in spanish so goodluck typing english.
-- Its a simple Feed Forward Neural network
+Este es un chatbot simple construido con TensorFlow. El chatbot solo entiende y responde en español, así que buena suerte escribiendo en inglés.
 
-
-## Training
-It can be trained by  running: 
+## Entrenamiento
+Puede entrenarse ejecutando:
 ```console
 python train.py
 ```
-This trains the model using the **intent.json** file, which has patterns and their corresponding responses.
+Esto entrena el modelo utilizando el archivo **intent.json**, que contiene patrones y sus respuestas correspondientes.
 
-
-
-## Usage
-In order to chat run:
+## Uso
+Para chatear, ejecuta:
 ```console
 python chat.py
 ```
-
-
 
