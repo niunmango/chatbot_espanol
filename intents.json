@@ -8,7 +8,8 @@
         "Qué tal",
         "Buenos días",
         "Buenas tardes",
-        "Buenas noches"
+        "Buenas noches",
+        "Cómo va?"
       ],
       "responses": [
         "Hola :-)",
@@ -18,18 +19,25 @@
       ]
     },
     {
+      "tag": "nombre",
+      "patterns": ["¿Cómo te llamas?", "¿Cómo te llaman?", "Cómo te dicen?", "Tu nomnbre?", "Cuál es tu nombre?"],
+      "responses": ["Soy un bot del Departamento de Alumnos de la UNCo",
+        "No tengo nombre, pero puedo decirte que soy un bot del Departamento de Alumnos de la UNCo"
+      ]
+    },
+    {
       "tag": "adiós",
       "patterns": ["adiós", "hasta luego"],
       "responses": [
-        "Nos vemos pronto",
+        "Nos vemos",
         "Hasta luego, gracias por visitarnos",
-        "Que tenga un lindo día",
-        "¡Chau! Vuelve pronto."
+        "Que tengas un lindo día",
+        "¡Chau! Volve pronto"
       ]
     },
     {
       "tag": "Gracias",
-      "patterns": ["Gracias", "Muchas gracias", "Eso es útil"],
+      "patterns": ["Gracias", "Muchas gracias", "Eso es útil", "Ah!", "jajaja"],
       "responses": ["Encantado de ayudar!",
         "¡En cualquier momento!",
         "Un placer"
@@ -54,7 +62,10 @@
         "¿Cómo me puedo inscribir?",
         "¿Qué día me puedo inscribir?",
         "¿Cómo hago para empezar?",
-        "Quiero inscribirme"
+        "Quiero inscribirme",
+        "¿Qué documentos necesito para inscribirme?",
+        "¿Cuáles son los requisitos para la inscripción?",
+        "¿Qué debo presentar en el Departamento de Alumnos?"
       ],
       "responses": [
         "El detalle está en https://web.curza.uncoma.edu.ar/preinscripcion",
@@ -68,7 +79,7 @@
         "¿Dónde queda el CURZA?"
       ],
       "responses": [
-        "El CURZA de la Universidad Nacional de Comahue está ubicado en la esquina de Monseñor Esandi y Ayacucho en Viedma, Argentina."
+        "El CURZA de la Universidad Nacional del Comahue está ubicado en la esquina de Monseñor Esandi y Ayacucho en Viedma, Argentina."
       ]
     },
     {
@@ -80,6 +91,38 @@
       ],
       "responses": [
         "Los detalles de contacto del departamento de alumnos están en: https://web.curza.uncoma.edu.ar/departamento-de-alumnos"
+      ]
+    },
+    {
+      "tag": "documentacion",
+      "patterns": [
+        "¿Qué documentos necesito para inscribirme?",
+        "¿Cuál es el documento que tengo que llevar?",
+        "¿Necesitan el DNI?"
+      ],
+      "responses": [
+        "Para la inscripción debes presentar la siguiente documentación: Formulario de Preinscripción (archivo PDF generado), 1 Fotocopia del DNI (ambos lados) y 1 Fotocopia del Certificado Analítico Secundario o la Constancia de Finalización de Estudios Secundarios ORIGINAL."
+      ]
+    },
+    {
+      "tag": "constancia",
+      "patterns": [
+        "¿Qué es la constancia de alumno regular?",
+        "Me sirve la constancia de alumno regular para inscribirme?"
+      ],
+      "responses": [
+        "La CONSTANCIA DE ALUMNO/A REGULAR NO TIENE VALIDEZ a los efectos de la inscripción en la UNCo."
+      ]
+    },
+    {
+      "tag": "ciclo_complementacion",
+      "patterns": [
+        "¿Qué requisitos adicionales hay para el Ciclo de Complementación?",
+        "¿Qué debo presentar para un posgrado?",
+        "Qué documentos tengo que presentar para un ciclo de complementacion?"
+      ],
+      "responses": [
+        "Además de los documentos generales, debes presentar 1 Fotocopia del analítico terciario/universitario (si no se lo han otorgado, debe presentar certificado de título en trámite) y 1 Fotocopia de la normativa que incluye la cantidad de horas correspondientes al plan de estudios terciarios/universitarios."
       ]
     },
     {
@@ -99,10 +142,31 @@
       "tag": "salir",
       "patterns": [
         "¿Cómo salgo?",
-        "Cómo me desconecto?"
+        "Cómo me desconecto?",
+        "Me cansaste",
+        "Me quedo sin tiempo",
+        "No te entiendo",
+        "adiós",
+        "No entendes nada",
+        "bye",
+        "quit"
       ],
       "responses": [
         "Para terminar el chat hay que escribir 'chau'"
+      ]
+    },
+    {
+      "tag": "calendario",
+      "patterns": [
+        "¿Dónde está el calendario académico?",
+        "Cuándo empiezo a cursar?",
+        "¿Cuándo termino?",
+        "¿Cuándo son los finales?",
+        "¿Cuándo empiezan las clases?",
+        "Cuándo arrancamos?"
+      ],
+      "responses": [
+        "En este enlace está el calendario académico: https://web.curza.uncoma.edu.ar/calendario-academico"
       ]
     }
   ]
